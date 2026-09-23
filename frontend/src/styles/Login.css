@@ -1,0 +1,1170 @@
+/* =====================================================
+   GYMIFY LOGIN PAGE
+===================================================== */
+
+.gym-login-page {
+  min-height: 100vh;
+
+  padding: 0;
+
+  background: #151719;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.gym-login-container {
+  min-height: 100vh;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.05fr)
+    minmax(420px, 0.95fr);
+}
+
+
+/* =====================================================
+   LEFT SIDE
+===================================================== */
+
+.gym-login-left {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 46px 60px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  background:
+    radial-gradient(
+      circle at 75% 25%,
+      rgba(255, 176, 46, 0.08),
+      transparent 25%
+    ),
+    linear-gradient(
+      145deg,
+      #17191b,
+      #0f1112
+    );
+
+  border-right:
+    1px solid #303235;
+
+  color: #f4f2ec;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.gym-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.gym-logo-icon {
+  width: 43px;
+  height: 43px;
+
+  border-radius: 11px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffb02e;
+
+  color: #17120a;
+
+  font-size: 22px;
+
+  font-weight: 900;
+}
+
+.gym-logo strong {
+  display: block;
+
+  font-size: 18px;
+
+  letter-spacing: 1px;
+}
+
+.gym-logo span {
+  display: block;
+
+  margin-top: 2px;
+
+  font-size: 8px;
+
+  letter-spacing: 2px;
+
+  color: #898b8f;
+}
+
+
+/* =====================================================
+   HERO CONTENT
+===================================================== */
+
+.gym-hero-content {
+  position: relative;
+
+  z-index: 5;
+
+  max-width: 560px;
+}
+
+.hero-tag {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  padding:
+    7px
+    10px;
+
+  border:
+    1px solid
+    rgba(255, 176, 46, 0.3);
+
+  background:
+    rgba(255, 176, 46, 0.06);
+
+  border-radius: 6px;
+
+  color: #ffb02e;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+.gym-hero-content h1 {
+  margin: 0;
+
+  font-size:
+    clamp(
+      42px,
+      4.4vw,
+      66px
+    );
+
+  line-height: 0.98;
+
+  letter-spacing: -2px;
+
+  font-weight: 900;
+}
+
+.gym-hero-content h1 span {
+  color: #ffb02e;
+}
+
+.gym-hero-content p {
+  max-width: 520px;
+
+  margin: 25px 0 0;
+
+  color: #aeb0b2;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* =====================================================
+   ILLUSTRATION
+===================================================== */
+
+.gym-illustration {
+  position: absolute;
+
+  right: 4%;
+
+  top: 28%;
+
+  width: 430px;
+
+  height: 340px;
+
+  opacity: 0.9;
+
+  pointer-events: none;
+}
+
+
+/* FLOOR */
+
+.gym-floor {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  bottom: 35px;
+
+  height: 2px;
+
+  background: #343639;
+}
+
+
+/* BARBELL */
+
+.gym-barbell {
+  position: absolute;
+
+  left: 40px;
+  right: 40px;
+
+  bottom: 38px;
+
+  height: 44px;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.barbell-bar {
+  flex: 1;
+
+  height: 7px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #777a7f,
+      #292b2d
+    );
+
+  border-radius: 4px;
+}
+
+.barbell-plate {
+  border-radius: 50%;
+
+  border:
+    5px solid #414348;
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      #5d6066,
+      #17191b 65%
+    );
+
+  flex-shrink: 0;
+}
+
+.left-large,
+.right-large {
+  width: 56px;
+  height: 80px;
+}
+
+.left-small,
+.right-small {
+  width: 39px;
+  height: 61px;
+}
+
+
+/* =====================================================
+   PERSON
+===================================================== */
+
+.gym-person {
+  position: absolute;
+
+  left: 50%;
+
+  bottom: 74px;
+
+  width: 180px;
+  height: 245px;
+
+  transform:
+    translateX(-50%);
+}
+
+
+/* HEAD */
+
+.person-head {
+  position: absolute;
+
+  left: 66px;
+  top: 5px;
+
+  width: 48px;
+  height: 53px;
+
+  border-radius: 50% 50% 45% 45%;
+
+  background: #bf7458;
+
+  z-index: 5;
+}
+
+.person-head::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: -4px;
+
+  width: 48px;
+  height: 20px;
+
+  border-radius: 50% 50% 30% 30%;
+
+  background: #241918;
+}
+
+
+/* BODY */
+
+.person-body {
+  position: absolute;
+
+  left: 46px;
+  top: 65px;
+
+  width: 88px;
+  height: 105px;
+
+  border-radius:
+    35px
+    35px
+    15px
+    15px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffb02e,
+      #e58309
+    );
+
+  z-index: 4;
+}
+
+
+/* ARMS */
+
+.person-arm {
+  position: absolute;
+
+  top: 74px;
+
+  width: 69px;
+  height: 23px;
+
+  background: #bf7458;
+
+  border-radius: 20px;
+
+  z-index: 2;
+}
+
+.left-arm {
+  left: -2px;
+
+  transform:
+    rotate(-29deg);
+}
+
+.right-arm {
+  right: -2px;
+
+  transform:
+    rotate(29deg);
+}
+
+
+/* LEGS */
+
+.person-leg {
+  position: absolute;
+
+  top: 158px;
+
+  width: 27px;
+  height: 88px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #242c43,
+      #111827
+    );
+
+  border-radius:
+    0 0 8px 8px;
+
+  z-index: 2;
+}
+
+.left-leg {
+  left: 59px;
+
+  transform:
+    rotate(2deg);
+}
+
+.right-leg {
+  right: 59px;
+
+  transform:
+    rotate(-2deg);
+}
+
+
+/* =====================================================
+   DECORATIVE CIRCLES
+===================================================== */
+
+.floating-circle {
+  position: absolute;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #ffb02e;
+
+  border:
+    1px solid
+    rgba(255, 176, 46, 0.25);
+
+  background:
+    rgba(255, 176, 46, 0.04);
+}
+
+.circle-a {
+  width: 55px;
+  height: 55px;
+
+  top: 10px;
+  right: 65px;
+
+  font-size: 25px;
+}
+
+.circle-b {
+  width: 34px;
+  height: 34px;
+
+  top: 110px;
+  left: 5px;
+
+  font-size: 18px;
+}
+
+.circle-c {
+  width: 19px;
+  height: 19px;
+
+  bottom: 100px;
+  right: 15px;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   FEATURES
+===================================================== */
+
+.gym-features {
+  display: flex;
+
+  gap: 45px;
+
+  position: relative;
+
+  z-index: 10;
+}
+
+.gym-features div {
+  border-left:
+    2px solid #ffb02e;
+
+  padding-left: 12px;
+}
+
+.gym-features strong {
+  display: block;
+
+  font-size: 21px;
+}
+
+.gym-features span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #8c8e91;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   RIGHT SIDE
+===================================================== */
+
+.gym-login-right {
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 45px;
+
+  background: #1c1e21;
+
+  color: #f2efe9;
+}
+
+
+/* =====================================================
+   LOGIN BOX
+===================================================== */
+
+.login-box {
+  width: 100%;
+
+  max-width: 410px;
+}
+
+
+/* =====================================================
+   MOBILE LOGO
+===================================================== */
+
+.mobile-logo {
+  display: none;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.login-heading {
+  margin-bottom: 35px;
+}
+
+.login-small-title {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #ffb02e;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.login-heading h2 {
+  margin: 0;
+
+  font-size: 36px;
+
+  letter-spacing: -1.5px;
+
+  font-weight: 900;
+}
+
+.login-heading p {
+  margin:
+    9px
+    0
+    0;
+
+  color: #929599;
+
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.login-status {
+  padding:
+    12px
+    14px;
+
+  margin-bottom: 18px;
+
+  border:
+    1px solid
+    rgba(255, 176, 46, 0.3);
+
+  border-radius: 9px;
+
+  background:
+    rgba(255, 176, 46, 0.07);
+
+  color: #ffb02e;
+
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.gym-login-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 22px;
+}
+
+.login-field {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.login-field label {
+  margin-bottom: 8px;
+
+  color: #bbbdbf;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.login-input-wrapper {
+  display: flex;
+
+  align-items: center;
+
+  border:
+    1px solid #36383b;
+
+  border-radius: 9px;
+
+  background: #232528;
+
+  transition: 0.2s;
+}
+
+.login-input-wrapper:focus-within {
+  border-color: #ffb02e;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(255, 176, 46, 0.08);
+}
+
+.login-input-wrapper.input-error {
+  border-color: #ef6868;
+}
+
+.input-icon {
+  width: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #777a7d;
+
+  font-size: 13px;
+}
+
+.login-input-wrapper input {
+  flex: 1;
+
+  min-width: 0;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #f1efeb;
+
+  padding:
+    14px
+    12px
+    14px
+    0;
+
+  font-size: 14px;
+}
+
+.login-input-wrapper input::placeholder {
+  color: #66696d;
+}
+
+.show-password {
+  border: none;
+
+  background: transparent;
+
+  color: #888b8e;
+
+  cursor: pointer;
+
+  padding:
+    10px
+    14px;
+
+  font-size: 11px;
+}
+
+.show-password:hover {
+  color: #ffb02e;
+}
+
+.field-error {
+  min-height: 17px;
+
+  margin-top: 5px;
+
+  color: #ef6868;
+
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   OPTIONS
+===================================================== */
+
+.login-options {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-top: -5px;
+}
+
+.remember-option {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  color: #8c8e92;
+
+  font-size: 11px;
+
+  cursor: pointer;
+}
+
+.remember-option input {
+  accent-color: #ffb02e;
+}
+
+.forgot-password {
+  border: none;
+
+  background: transparent;
+
+  color: #ffb02e;
+
+  cursor: pointer;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+
+/* =====================================================
+   LOGIN BUTTON
+===================================================== */
+
+.gym-login-button {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  width: 100%;
+
+  border: none;
+
+  border-radius: 9px;
+
+  padding:
+    14px
+    18px;
+
+  background: #ffb02e;
+
+  color: #1d1608;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+
+.gym-login-button:hover {
+  background: #ffc257;
+
+  transform: translateY(-1px);
+}
+
+.gym-login-button span {
+  font-size: 18px;
+}
+
+
+/* =====================================================
+   DIVIDER
+===================================================== */
+
+.login-divider {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin:
+    28px
+    0
+    18px;
+}
+
+.login-divider span {
+  flex: 1;
+
+  height: 1px;
+
+  background: #34363a;
+}
+
+.login-divider p {
+  margin: 0;
+
+  color: #66696d;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   SOCIAL BUTTONS
+===================================================== */
+
+.social-buttons {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+}
+
+.social-buttons button {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  border:
+    1px solid #36383b;
+
+  border-radius: 9px;
+
+  background: #232528;
+
+  color: #bcbec1;
+
+  padding: 11px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+
+  transition: 0.2s;
+}
+
+.social-buttons button:hover {
+  border-color: #55585c;
+
+  background: #282a2d;
+}
+
+.social-buttons strong {
+  color: #ffb02e;
+
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   SIGNUP
+===================================================== */
+
+.signup-section {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 5px;
+
+  margin-top: 25px;
+
+  color: #777a7d;
+
+  font-size: 11px;
+}
+
+.signup-section button {
+  border: none;
+
+  background: transparent;
+
+  color: #ffb02e;
+
+  cursor: pointer;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+.signup-section button:hover {
+  text-decoration: underline;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.login-footer {
+  margin-top: 35px;
+
+  text-align: center;
+
+  color: #4f5256;
+
+  font-size: 9px;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1050px) {
+
+  .gym-login-container {
+    grid-template-columns:
+      1fr
+      1fr;
+  }
+
+  .gym-login-left {
+    padding:
+      35px
+      40px;
+  }
+
+  .gym-illustration {
+    right: -100px;
+
+    opacity: 0.55;
+  }
+
+  .gym-hero-content h1 {
+    font-size: 48px;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .gym-login-container {
+    display: block;
+  }
+
+  .gym-login-left {
+    min-height: 260px;
+
+    padding:
+      28px
+      25px;
+  }
+
+  .gym-hero-content {
+    margin-top: 45px;
+  }
+
+  .gym-hero-content h1 {
+    font-size: 38px;
+  }
+
+  .gym-hero-content p {
+    max-width: 430px;
+  }
+
+  .gym-illustration {
+    transform: scale(0.75);
+
+    transform-origin:
+      right
+      center;
+  }
+
+  .gym-features {
+    display: none;
+  }
+
+  .gym-login-right {
+    min-height: auto;
+
+    padding:
+      45px
+      25px;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .gym-login-left {
+    min-height: 220px;
+
+    padding:
+      25px
+      20px;
+  }
+
+  .gym-logo span {
+    display: none;
+  }
+
+  .gym-hero-content {
+    margin-top: 35px;
+  }
+
+  .gym-hero-content h1 {
+    font-size: 30px;
+
+    letter-spacing: -1px;
+  }
+
+  .gym-hero-content p {
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    max-width: 290px;
+  }
+
+  .gym-illustration {
+    right: -160px;
+
+    top: 10px;
+
+    opacity: 0.3;
+  }
+
+  .gym-login-right {
+    padding:
+      35px
+      20px;
+  }
+
+  .login-heading h2 {
+    font-size: 30px;
+  }
+
+  .mobile-logo {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    color: #ffb02e;
+
+    font-weight: 900;
+  }
+
+  .mobile-logo .gym-logo-icon {
+    width: 35px;
+    height: 35px;
+
+    font-size: 18px;
+  }
+
+}

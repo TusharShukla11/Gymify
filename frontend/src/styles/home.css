@@ -1,0 +1,1021 @@
+/* =====================================================
+   GYMIFY LANDING PAGE
+===================================================== */
+
+.home-page {
+  min-height: 100vh;
+  background: #101112;
+  color: #f4f3ee;
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.home-navbar {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 50;
+
+  height: 82px;
+
+  padding:
+    0 6%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.65),
+      transparent
+    );
+}
+
+
+/* LOGO */
+
+.home-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  cursor: pointer;
+}
+
+.home-logo-mark {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 8px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #caff1a;
+
+  color: #111;
+
+  font-size: 20px;
+
+  font-weight: 900;
+}
+
+.home-logo-text strong {
+  display: block;
+
+  font-size: 16px;
+
+  letter-spacing: 1px;
+}
+
+.home-logo-text span {
+  display: block;
+
+  margin-top: 2px;
+
+  font-size: 7px;
+
+  letter-spacing: 1.7px;
+
+  color: #888a8d;
+}
+
+
+/* LINKS */
+
+.home-nav-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 34px;
+}
+
+.home-nav-links a {
+  color: #c8c8c5;
+
+  text-decoration: none;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  transition: 0.2s;
+}
+
+.home-nav-links a:hover {
+  color: #caff1a;
+}
+
+
+/* BUTTON */
+
+.get-access-button {
+  border: none;
+
+  background: #caff1a;
+
+  color: #161a0c;
+
+  padding:
+    11px
+    17px;
+
+  border-radius: 5px;
+
+  font-size: 9px;
+
+  font-weight: 900;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.get-access-button:hover {
+  background: #d8ff52;
+
+  transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.home-hero {
+  position: relative;
+
+  min-height: 690px;
+
+  display: flex;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 75% 40%,
+      rgba(202,255,26,0.08),
+      transparent 25%
+    ),
+    linear-gradient(
+      90deg,
+      #080909 0%,
+      #121416 58%,
+      #202326 100%
+    );
+}
+
+
+/*
+  Decorative gym background.
+  You can later replace this with a real gym image
+  by changing background-image here.
+*/
+
+.home-hero::after {
+  content: "";
+
+  position: absolute;
+
+  right: 0;
+  top: 0;
+
+  width: 60%;
+
+  height: 100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      #080909,
+      rgba(8,9,9,0.1)
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255,255,255,0.025) 0,
+      rgba(255,255,255,0.025) 1px,
+      transparent 1px,
+      transparent 95px
+    );
+
+  opacity: 0.9;
+}
+
+
+/* overlay */
+
+.hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at 75% 65%,
+      rgba(255,255,255,0.05),
+      transparent 20%
+    );
+}
+
+
+/* CONTENT */
+
+.hero-content {
+  position: relative;
+
+  z-index: 5;
+
+  width: 55%;
+
+  margin-left: 8%;
+
+  padding-top: 70px;
+}
+
+.hero-tag {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  border:
+    1px solid
+    rgba(202,255,26,0.3);
+
+  color: #caff1a;
+
+  background:
+    rgba(202,255,26,0.05);
+
+  padding:
+    8px
+    11px;
+
+  border-radius: 5px;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.hero-content h1 {
+  margin: 0;
+
+  font-size:
+    clamp(
+      50px,
+      6vw,
+      88px
+    );
+
+  line-height: 0.92;
+
+  letter-spacing: -3px;
+
+  font-weight: 900;
+}
+
+.hero-content h1 span {
+  color: #caff1a;
+}
+
+.hero-content p {
+  max-width: 500px;
+
+  margin:
+    25px
+    0;
+
+  color: #a2a4a7;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 55px;
+}
+
+.hero-primary-button,
+.hero-secondary-button {
+  padding:
+    13px
+    19px;
+
+  border-radius: 6px;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.6px;
+
+  cursor: pointer;
+
+  text-decoration: none;
+}
+
+.hero-primary-button {
+  border: none;
+
+  background: #caff1a;
+
+  color: #111;
+
+  display: flex;
+
+  gap: 15px;
+}
+
+.hero-primary-button span {
+  font-size: 14px;
+}
+
+.hero-secondary-button {
+  border:
+    1px solid #414448;
+
+  color: #ddd;
+
+  background: rgba(255,255,255,0.02);
+}
+
+.hero-primary-button:hover {
+  background: #d8ff52;
+}
+
+.hero-secondary-button:hover {
+  border-color: #caff1a;
+  color: #caff1a;
+}
+
+
+/* STATS */
+
+.hero-stats {
+  display: flex;
+
+  gap: 42px;
+}
+
+.hero-stats div {
+  border-left:
+    2px solid #caff1a;
+
+  padding-left: 11px;
+}
+
+.hero-stats strong {
+  display: block;
+
+  color: #caff1a;
+
+  font-size: 20px;
+}
+
+.hero-stats span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #777a7d;
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+}
+
+
+/* SCROLL */
+
+.hero-scroll {
+  position: absolute;
+
+  bottom: 25px;
+  right: 6%;
+
+  z-index: 10;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #727578;
+
+  font-size: 7px;
+
+  letter-spacing: 1.5px;
+}
+
+.hero-scroll span {
+  color: #caff1a;
+
+  font-size: 17px;
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.home-about {
+  display: grid;
+
+  grid-template-columns:
+    0.9fr
+    1.1fr;
+
+  gap: 70px;
+
+  padding:
+    110px 9%;
+
+  background: #101112;
+}
+
+.about-image {
+  min-height: 420px;
+
+  position: relative;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #25282a,
+      #111315
+    );
+}
+
+.about-image::after {
+  content: "GYM";
+
+  position: absolute;
+
+  right: 15px;
+  bottom: 8px;
+
+  font-size: 110px;
+
+  font-weight: 900;
+
+  color:
+    rgba(255,255,255,0.025);
+}
+
+.about-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(202,255,26,0.05),
+      transparent 45%
+    ),
+    repeating-linear-gradient(
+      135deg,
+      rgba(255,255,255,0.025) 0,
+      rgba(255,255,255,0.025) 2px,
+      transparent 2px,
+      transparent 17px
+    );
+}
+
+.about-badge {
+  position: absolute;
+
+  left: 25px;
+  bottom: 25px;
+
+  background: #caff1a;
+
+  color: #111;
+
+  padding:
+    10px
+    15px;
+
+  font-size: 10px;
+
+  font-weight: 900;
+}
+
+.about-content {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.section-kicker {
+  color: #caff1a;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.about-content h2,
+.section-heading-center h2,
+.pricing-content h2,
+.home-contact h2 {
+  margin:
+    11px 0
+    20px;
+
+  font-size:
+    clamp(
+      38px,
+      4vw,
+      62px
+    );
+
+  line-height: 0.98;
+
+  letter-spacing: -2px;
+
+  font-weight: 900;
+}
+
+.about-content h2 span,
+.section-heading-center h2 span,
+.pricing-content h2 span,
+.home-contact h2 span {
+  color: #caff1a;
+}
+
+.about-content p {
+  max-width: 540px;
+
+  color: #85888b;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+
+  margin:
+    0 0
+    15px;
+}
+
+.about-button {
+  align-self: flex-start;
+
+  border: none;
+
+  background: #caff1a;
+
+  color: #111;
+
+  padding:
+    13px
+    18px;
+
+  border-radius: 5px;
+
+  margin-top: 15px;
+
+  font-size: 9px;
+
+  font-weight: 900;
+
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+.home-services {
+  padding:
+    100px 9%;
+
+  background: #151719;
+
+  border-top:
+    1px solid #242628;
+}
+
+.section-heading-center {
+  text-align: center;
+
+  max-width: 700px;
+
+  margin:
+    0 auto
+    55px;
+}
+
+.section-heading-center h2 {
+  margin-bottom: 12px;
+}
+
+.section-heading-center p {
+  color: #7d8083;
+
+  font-size: 13px;
+}
+
+.services-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 16px;
+}
+
+.service-card {
+  position: relative;
+
+  min-height: 205px;
+
+  padding: 24px;
+
+  border:
+    1px solid #282b2e;
+
+  border-radius: 7px;
+
+  background: #111315;
+
+  transition:
+    transform 0.25s,
+    border-color 0.25s;
+}
+
+.service-card > span {
+  position: absolute;
+
+  right: 20px;
+  top: 20px;
+
+  color: #45484b;
+
+  font-size: 9px;
+
+  font-weight: 800;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+
+  border-color:
+    rgba(202,255,26,0.5);
+}
+
+.service-icon {
+  font-size: 28px;
+
+  margin-bottom: 24px;
+}
+
+.service-card h3 {
+  margin: 0 0 9px;
+
+  font-size: 16px;
+
+  letter-spacing: 0.5px;
+}
+
+.service-card p {
+  margin: 0;
+
+  color: #74777a;
+
+  font-size: 11px;
+
+  line-height: 1.6;
+}
+
+
+/* =====================================================
+   PRICING
+===================================================== */
+
+.home-pricing {
+  min-height: 430px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding:
+    80px 9%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1a1d1f,
+      #0f1011
+    );
+
+  border-top:
+    1px solid #25282a;
+}
+
+.pricing-content {
+  max-width: 700px;
+}
+
+.pricing-content p {
+  max-width: 560px;
+
+  color: #85888b;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+}
+
+.pricing-button {
+  margin-top: 18px;
+
+  border: none;
+
+  padding:
+    13px
+    19px;
+
+  background: #caff1a;
+
+  color: #111;
+
+  border-radius: 5px;
+
+  font-size: 9px;
+
+  font-weight: 900;
+
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.home-contact {
+  padding:
+    85px 9%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 30px;
+
+  background: #caff1a;
+
+  color: #111;
+}
+
+.home-contact .section-kicker {
+  color: #343900;
+}
+
+.home-contact h2 {
+  margin-bottom: 0;
+}
+
+.contact-button {
+  border:
+    1px solid #111;
+
+  background: transparent;
+
+  color: #111;
+
+  padding:
+    14px
+    20px;
+
+  border-radius: 5px;
+
+  font-size: 9px;
+
+  font-weight: 900;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+.contact-button:hover {
+  background: #111;
+
+  color: #caff1a;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.home-footer {
+  min-height: 90px;
+
+  padding:
+    0 9%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  background: #0b0c0d;
+
+  color: #64676a;
+}
+
+.footer-brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+}
+
+.footer-brand .home-logo-mark {
+  width: 30px;
+  height: 30px;
+
+  font-size: 14px;
+}
+
+.footer-brand strong {
+  display: block;
+
+  color: #ddd;
+
+  font-size: 12px;
+}
+
+.footer-brand span {
+  display: block;
+
+  font-size: 6px;
+
+  letter-spacing: 1px;
+}
+
+.home-footer p {
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .home-nav-links {
+    display: none;
+  }
+
+  .home-hero {
+    min-height: 650px;
+  }
+
+  .hero-content {
+    width: 80%;
+
+    margin-left: 7%;
+  }
+
+  .home-about {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .home-navbar {
+    padding:
+      0 20px;
+  }
+
+  .get-access-button {
+    padding:
+      9px
+      12px;
+  }
+
+  .home-hero {
+    min-height: 700px;
+  }
+
+  .hero-content {
+    width: 90%;
+
+    margin-left: 5%;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-stats {
+    gap: 18px;
+
+    flex-wrap: wrap;
+  }
+
+  .hero-stats strong {
+    font-size: 17px;
+  }
+
+  .home-about,
+  .home-services,
+  .home-pricing {
+    padding:
+      70px 6%;
+  }
+
+  .about-image {
+    min-height: 300px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-contact {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding:
+      65px 6%;
+  }
+
+  .home-footer {
+    padding:
+      25px 6%;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+}
